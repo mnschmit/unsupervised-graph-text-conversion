@@ -60,18 +60,18 @@ we recommend making this change before attempting to run any experiment.
 
 # Datasets
 ## Visual Genome
-The VG benchmark can be downloaded from [here](http://cistern.cis.lmu.de/unsupervised-graph-text-conversion/vg-graph-text.tar.gz).
+The VG benchmark can be downloaded from [here](http://cistern.cis.lmu.de/unsupervised-graph-text-conversion).
 Please read the dataset README for more details on the data format.
 
 VG is licensed under a
-[Creative Commons Attribution 4.0 International License][http://creativecommons.org/licenses/by/4.0/].
+[Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
 
 ## WebNLG v2.1
 We have included the dataset in the 
 dataset folder. The files were originally downloaded from [here](https://gitlab.com/shimorina/webnlg-dataset/-/tree/master/release_v2.1/json).
 
 The WebNLG data are licensed under a
-[Creative Commons Attribution-ShareAlike 4.0 International License][http://creativecommons.org/licenses/by-sa/4.0/].
+[Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
 
 In case you want to retrace our preprocessing, we ran `LC_ALL=C.UTF-8 LANG=C.UTF-8 python src/data/format_webnlg.py input_file.json output_file.tsv` to preprocess each json file and convert it to a tsv file.
 (`input_file.json` and `output_file.tsv` are to be replaced with the corresponding files in the dataset folder, e.g., `test.tsv`, `train.tsv`, `val.tsv`, etc.)
