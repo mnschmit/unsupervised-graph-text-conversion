@@ -1,6 +1,6 @@
-models/
-predictions/
-vocabularies/
+/models/
+/predictions/
+/vocabularies/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
