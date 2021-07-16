@@ -105,12 +105,22 @@ def blank_elem(seq, blank_prob=0.2):
 
     return fact_delim.join([
         elem_delim.join(f)
-        for f in facts
+        for f in blanked_facts
     ])
+
+def blank_fact(seq, blank_prob=0.2):
+    facts = seq.split(fact_delim)
+    
+    blanked_facts = [
+        fact if random.random() > blank_prob else blank_symbol
+        for fact in facts
+    ]
+
+    return fact_delim.join(blanked_facts)
 
 def blank(seq, is_graph):
     if is_graph:
-        return blank_elem(seq), is_graph
+        return blank_fact(seq), is_graph
     else:
         return blank_word(seq), is_graph
 
